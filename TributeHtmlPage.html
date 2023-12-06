@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Main page</title>
+<style>
+  body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background-color 0.5s ease-in-out;
+    }
+  .sp{
+    height: 635px;
+    width: 1300px;
+    text-align: center;
+          }
+
+  #overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 999;
+    }
+
+    #popup {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 20px;
+      background-color: lightblue;
+      font-size: 18px;
+      font-family: cursive;
+      border: 1px solid lightcoral;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      z-index: 1000;
+      opacity: 0;
+      transition: opacity 0.5s ease-in-out;
+    }
+  
+</style>
+</head>
+
+<body>
+ <script>
+  function changeBackgroundColor() {
+    // Generate a random color in hexadecimal format
+    const randomColor = '#' + Math.floor(Math.random()*127 + 128).toString(16) + Math.floor(Math.random()*127 + 128).toString(16) + Math.floor(Math.random()*127 + 128).toString(16);
+
+    // Apply the random color to the body background
+    document.body.style.backgroundColor = randomColor;
+  }
+
+  // Call the function every second
+  setInterval(changeBackgroundColor, 2000);
+</script>
+<div id="overlay"></div>
+  <div id="popup">
+    <p>Welcome to our Tribute website! </p>
+    <button onclick="closePopup()">Close</button>
+  </div>
+ 
+ <div class="sp">
+  <div> <img src="cu.jpg" style="width:50px; height:50px;"><img src="cu.jpg" style="width:50px; height:50px;"><img src="cu.jpg" style="width:50px; height:50px;"><img src="cu.jpg" style="width:50px; height:50px;"><img src="cu.jpg" style="width:50px; height:50px;"><img src="cu.jpg" style="width:50px; height:50px;"><img src="cu.jpg" style="width:50px; height:50px;"><img src="cu.jpg" style="width:50px; height:50px;"><img src="cu.jpg" style="width:50px; height:50px;"><img src="cu.jpg" style="width:50px; height:50px;"><img src="cu.jpg" style="width:50px; height:50px;"><img src="cu.jpg" style="width:50px; height:50px;"><img src="cu.jpg" style="width:50px; height:50px;"><img src="cu.jpg" style="width:50px; height:50px;"><img src="cu.jpg" style="width:50px; height:50px;"><img src="cu.jpg" style="width:50px; height:50px;"><img src="cu.jpg" style="width:50px; height:50px;"><img src="cu.jpg" style="width:50px; height:50px;"><img src="cu.jpg" style="width:50px; height:50px;"><img src="cu.jpg" style="width:50px; height:50px;"><img src="cu.jpg" style="width:50px; height:50px;"><img src="cu.jpg" style="width:50px; height:50px;"> <img src="cu.jpg" style="width:50px; height:50px;"><img src="cu.jpg" style="width:50px; height:50px;"><img src="cu.jpg" style="width:50px; height:50px;"><br>
+    <a href="TributePage.html" style="font-size: 25px; font-family: cursive;">Sir Mokshagundam Visvesvaraya</a><br><br><br><img src="bq.png" style="width: 50px; height: 50px;"><img src="bq.png" style="width: 50px; height: 50px;"><img src="bq.png" style="width: 50px; height: 50px;"><img src="bq.png" style="width: 50px; height: 50px;"><img src="bq.png" style="width: 50px; height: 50px;"><img src="bq.png" style="width: 50px; height: 50px;"><img src="bq.png" style="width: 50px; height: 50px;"><img src="bq.png" style="width: 50px; height: 50px;"><img src="bq.png" style="width: 50px; height: 50px;"><img src="bq.png" style="width: 50px; height: 50px;"><br><br></div>
+  <a href="apj.html" style="font-size: 25px; font-family: cursive;">Dr. APJ abdul kalam </a><br><br><img src="ro.jpeg" style="width:50px; height: 50px;"><img src="ro.jpeg" style="width:50px; height: 50px;"><img src="ro.jpeg" style="width:50px; height: 50px;"><img src="ro.jpeg" style="width:50px; height: 50px;"><img src="ro.jpeg" style="width:50px; height: 50px;"><img src="ro.jpeg" style="width:50px; height: 50px;"><img src="ro.jpeg" style="width:50px; height: 50px;"><img src="ro.jpeg" style="width:50px; height: 50px;"><br><br><br>
+  <a href="stef.html" style="font-size: 25px; font-family: cursive;">Stephen Hawking</a><br><br><img src="tu.png" style="width: 50px; height: 50px;"><img src="tu.png" style="width: 50px; height: 50px;"><img src="tu.png" style="width: 50px; height: 50px;"><img src="tu.png" style="width: 50px; height: 50px;"><img src="tu.png" style="width: 50px; height: 50px;"><img src="tu.png" style="width: 50px; height: 50px;"><img src="tu.png" style="width: 50px; height: 50px;"><img src="tu.png" style="width: 50px; height: 50px;"><br><br><br>
+  <a href="blub.html" style="font-size: 25px; font-family: cursive;">Thomas Edison</a><br><br><img src="hi.png" style="width: 50px; height: 50px;"><img src="hi.png" style="width: 50px; height: 50px;"><img src="hi.png" style="width: 50px; height: 50px;"><img src="hi.png" style="width: 50px; height: 50px;"><img src="hi.png" style="width: 50px; height: 50px;"><img src="hi.png" style="width: 50px; height: 50px;"><img src="hi.png" style="width: 50px; height: 50px;"><br>
+  <br><br>
+  <a href="Elbertsir.html" style="font-size: 25px; font-family: cursive;">Albert Einstein </a><br><br><img src="yr.png" style="width: 50px; height: 50px;"><img src="yr.png" style="width: 50px; height: 50px;"><img src="yr.png" style="width: 50px; height: 50px;"><img src="yr.png" style="width: 50px; height: 50px;"><img src="yr.png" style="width: 50px; height: 50px;"><img src="yr.png" style="width: 50px; height: 50px;"><img src="yr.png" style="width: 50px; height: 50px;"><br><img src="cu.jpg" style="width:50px; height:50px;"><img src="cu.jpg" style="width:50px; height:50px;"><img src="cu.jpg" style="width:50px; height:50px;"><img src="cu.jpg" style="width:50px; height:50px;"><img src="cu.jpg" style="width:50px; height:50px;"><img src="cu.jpg" style="width:50px; height:50px;"><img src="cu.jpg" style="width:50px; height:50px;"><img src="cu.jpg" style="width:50px; height:50px;"><img src="cu.jpg" style="width:50px; height:50px;"><img src="cu.jpg" style="width:50px; height:50px;"><img src="cu.jpg" style="width:50px; height:50px;"><img src="cu.jpg" style="width:50px; height:50px;"><img src="cu.jpg" style="width:50px; height:50px;"><img src="cu.jpg" style="width:50px; height:50px;"><img src="cu.jpg" style="width:50px; height:50px;"><img src="cu.jpg" style="width:50px; height:50px;"><img src="cu.jpg" style="width:50px; height:50px;"><img src="cu.jpg" style="width:50px; height:50px;"><img src="cu.jpg" style="width:50px; height:50px;"><img src="cu.jpg" style="width:50px; height:50px;"><img src="cu.jpg" style="width:50px; height:50px;"><img src="cu.jpg" style="width:50px; height:50px;"> <img src="cu.jpg" style="width:50px; height:50px;"><img src="cu.jpg" style="width:50px; height:50px;"><img src="cu.jpg" style="width:50px; height:50px;">
+   </div> 
+
+  <script>
+    // Show the popup when the page is loaded
+    document.addEventListener('DOMContentLoaded', function() {
+      showPopup();
+    });
+
+    function showPopup() {
+      var popup = document.getElementById('popup');
+      var overlay = document.getElementById('overlay');
+
+      popup.style.display = 'block';
+      overlay.style.display = 'block';
+
+      // Add a small delay before applying the fade-in effect
+      setTimeout(function() {
+        popup.style.opacity = '1';
+      }, 50);
+    }
+
+    function closePopup() {
+      var popup = document.getElementById('popup');
+      var overlay = document.getElementById('overlay');
+
+      popup.style.opacity = '0';
+
+      // Hide the popup and overlay after the fade-out effect
+      setTimeout(function() {
+        popup.style.display = 'none';
+        overlay.style.display = 'none';
+      }, 500);
+    }
+  </script>
+
+</body>
+</html>
